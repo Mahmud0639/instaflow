@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/miuImage"
+        android:layout_width="@dimen/_110mdp"
+        android:layout_height="@dimen/_110mdp"
+        android:src="@drawable/miurem2"
+        app:layout_constraintBottom_toTopOf="@+id/textV1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/textV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_black"
+        android:text="Welcome to Social World!"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16font_mdp"
+        app:layout_constraintBottom_toTopOf="@+id/textV2"
+        app:layout_constraintEnd_toEndOf="@id/miuImage"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/miuImage"
+        app:layout_constraintTop_toBottomOf="@+id/miuImage" />
+
+    <TextView
+        android:id="@+id/textV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Keep Connected With Friends"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12font_mdp"
+        app:layout_constraintBottom_toTopOf="@+id/textInput1"
+        app:layout_constraintEnd_toEndOf="@id/textV1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/textV1"
+        app:layout_constraintTop_toBottomOf="@+id/textV1" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInput1"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10mdp"
+        android:layout_marginTop="@dimen/_15mdp"
+        android:layout_marginEnd="@dimen/_10mdp"
+        android:background="@drawable/text_input_back"
+        android:paddingStart="@dimen/_5mdp"
+        android:paddingTop="@dimen/_5mdp"
+        android:paddingBottom="@dimen/_5mdp"
+        app:layout_constraintBottom_toTopOf="@+id/textInput2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textV2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="Email Address"
+            android:paddingBottom="@dimen/_5mdp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInput2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15mdp"
+        android:background="@drawable/text_input_back"
+        android:paddingStart="@dimen/_5mdp"
+        android:paddingTop="@dimen/_5mdp"
+        android:paddingBottom="@dimen/_5mdp"
+        app:layout_constraintBottom_toTopOf="@+id/loginBtn"
+        app:layout_constraintEnd_toEndOf="@id/textInput1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/textInput1"
+        app:layout_constraintTop_toBottomOf="@+id/textInput1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingBottom="@dimen/_5mdp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15mdp"
+        android:background="@color/green2"
+        android:text="Login"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/register"
+        app:layout_constraintEnd_toEndOf="@id/textInput2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/textInput2"
+        app:layout_constraintTop_toBottomOf="@+id/textInput2" />
+
+    <TextView
+        android:id="@+id/dontAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account?"
+        app:layout_constraintBottom_toBottomOf="@id/register"
+        app:layout_constraintEnd_toStartOf="@id/register"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/register" />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_8mdp"
+        android:text="Register!"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/_14font_mdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/dontAccount"
+        android:layout_marginStart="@dimen/_5mdp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

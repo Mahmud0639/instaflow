@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="@dimen/_8mdp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/_35mdp"
+        android:layout_height="@dimen/_35mdp"
+        android:src="@drawable/my_image3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/profileImage2"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Jannatul Ferdous mentioned you in a comment"
+        app:layout_constraintTop_toTopOf="@id/profileImage2"
+        app:layout_constraintBottom_toBottomOf="@id/profileImage2"
+        android:layout_marginStart="@dimen/_6mdp"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/_8mdp"
+        app:layout_constraintStart_toEndOf="@id/profileImage2"
+        android:id="@+id/commentDesc"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="just now"
+        app:layout_constraintStart_toStartOf="@id/commentDesc"
+        app:layout_constraintTop_toBottomOf="@id/commentDesc"
+        android:id="@+id/time"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

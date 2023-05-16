@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1098506940718",
+    "project_id": "socialmedia-5f6d3",
+    "storage_bucket": "socialmedia-5f6d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1098506940718:android:c516e83d2b73c523e20abf",
+        "android_client_info": {
+          "package_name": "com.manunimahmud.instafollow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1098506940718-2gfe1kfib43gmhh2pdpo1ng0l9d8mdr7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkwgTxBBECsFBsAD_GE-p_u-nBfMFx_cA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1098506940718-2gfe1kfib43gmhh2pdpo1ng0l9d8mdr7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
